@@ -1,3 +1,4 @@
+'use client'
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { UserAuth } from "../context/AuthContext";
@@ -39,6 +40,9 @@ export default function Navbar(){
                 </li>
                 <li className="p-4 cursor-pointer">
                     <Link href='/about'>About</Link>
+                </li>
+                <li className="p-4 cursor-pointer">
+                    <Link href='/profile'>Profile</Link>
                 </li>
 
                 {/* <li className="p-2 cursor-pointer">

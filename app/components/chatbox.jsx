@@ -1,7 +1,7 @@
 'use client'
 import { Box, Button, Stack, TextField, Typography } from "@mui/material";
 import React, { useState } from "react";
-import Chat from "./components/chat";
+import Chat from "./chat";
 
 
 export default function Chatbox(){
@@ -18,7 +18,7 @@ export default function Chatbox(){
             {role:'assistant',content:''}
         ])
         setMessage('')
-        console.log("messages:  "+ messages); 
+        // console.log("messages:  "+ messages); 
         const response = fetch('/api/chat/',{
             method: 'POST',
             headers:{
