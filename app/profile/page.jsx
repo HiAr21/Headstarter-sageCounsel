@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import Navbar from "../components/navbar";
 import { UserAuth } from "../context/AuthContext";
 
-export default function page(){
+export default function Page(){
     const {user}=UserAuth();
     const [loading, setLoading]=useState(true);
 
